@@ -1,0 +1,256 @@
+{
+	"variables": [],
+	"info": {
+		"name": "ODPID_SERVICE",
+		"_postman_id": "0332bbbb-60ba-90f0-a69b-d80a0fcc8245",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/getAccounts",
+			"request": {
+				"url": "http://localhost:3000/api/getaccount",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/create",
+			"request": {
+				"url": "http://localhost:3000/api/create",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"type\" : \"opendata\",\n\t\"name\" : \"dasda\"\n}"
+				},
+				"description": "create odpid"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/get_odpid",
+			"request": {
+				"url": "http://localhost:3000/get_odpid",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"testdataset\",\n\t\"type\" : \"opendata\"\n}"
+				},
+				"description": "get odpid"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/uuid",
+			"request": {
+				"url": "http://localhost:3000/api/uuid",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "get the udid"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/uuid?id=1",
+			"request": {
+				"url": {
+					"raw": "http://localhost:3000/api/uuid?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"uuid"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "get the udid by id\nid is count of the entry in contract\ncount can get by count api"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/type",
+			"request": {
+				"url": "http://localhost:3000/api/type",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "get the type of dataset"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/type?id=1",
+			"request": {
+				"url": {
+					"raw": "http://localhost:3000/api/type?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"type"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "get the type of dataset by the id\nwhere id is number of entry in contract\nand can be fetched by count api"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/dataset",
+			"request": {
+				"url": "http://localhost:3000/api/dataset",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "get the dataset name"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/dataset?id=1",
+			"request": {
+				"url": {
+					"raw": "http://localhost:3000/api/dataset?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"dataset"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "get the dataset name by id\nwhere id is number of entry in contract\nand can get by count api"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/details",
+			"request": {
+				"url": "http://localhost:3000/api/details",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "get the details as array"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/details",
+			"request": {
+				"url": {
+					"raw": "http://localhost:3000/api/details?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"details"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "get the details as array by id\nwhere id is number of entry in contract\nand can get by count api"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/count",
+			"request": {
+				"url": "http://localhost:3000/api/count",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "number of entries in smart contract"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/alldetails",
+			"request": {
+				"url": "http://localhost:3000/api/alldetails",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "get all details"
+			},
+			"response": []
+		}
+	]
+}

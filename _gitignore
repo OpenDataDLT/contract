@@ -1,0 +1,10 @@
+node_modules
+logs
+Backups
+CachedData
+CachedExtensions
+Cache
+User
+build
+GPUCache
+
